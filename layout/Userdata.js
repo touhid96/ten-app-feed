@@ -7,7 +7,7 @@ const Userdata = () => {
     getUser();
   }, []);
   const getUser = () => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://tenoo-2854a-default-rtdb.europe-west1.firebasedatabase.app/user.json")
       .then((res) => res.json())
       .then((data) => setUser(data));
   };
